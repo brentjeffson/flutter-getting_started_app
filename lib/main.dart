@@ -21,6 +21,33 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Container(
+            child: Text(
+              "Inside a container",
+              style: TextStyle(
+                color: Colors.white,
+                backgroundColor: Colors.red[900],
+              ),
+            ),
+            color: Colors.red[400],
+            margin: EdgeInsets.all(30.0),
+            padding: EdgeInsets.all(30.0),
+          ),
+          Padding(
+            padding: EdgeInsets.all(30.0),
+            child: Text(
+              "Inside a container",
+              style: TextStyle(
+                  color: Colors.white,
+                  backgroundColor: Colors.red[900],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
