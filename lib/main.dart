@@ -21,6 +21,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
+      body: Center(
+        child: IconButton(
+          onPressed: () {
+            print("It's Cold");
+          },
+          icon: Icon(Icons.ac_unit),
+          iconSize: 90,
+          color: Colors.blue[900],
+        ),
+      ),
     );
   }
 }
