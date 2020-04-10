@@ -21,6 +21,24 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
+      body: Center(
+        child: RaisedButton.icon(
+          onPressed: () {},
+          color: Colors.blue[300],
+          icon: Icon(
+            Icons.ac_unit,
+            color: Colors.blue[900],
+            size: 120,
+          ),
+          label: Text(
+            "AC",
+            style: TextStyle(
+              color: Colors.blue[900],
+              fontSize: 32,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
