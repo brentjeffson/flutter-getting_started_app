@@ -21,6 +21,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: () {},
+          child: Icon(
+            Icons.ac_unit,
+            size: 120,
+            color: Colors.red[900]
+          ),
+        ),
+      ),
     );
   }
 }
