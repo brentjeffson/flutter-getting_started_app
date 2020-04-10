@@ -43,15 +43,32 @@ class Home extends StatelessWidget {
               color: Colors.pink,
             ),
           ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              child: Text('3'),
-              padding: EdgeInsets.all(30.0),
-              color: Colors.red,
-            ),
-          ),
+          ColoredBox("Colored Box", Colors.red, 1),
         ],
+      ),
+    );
+  }
+}
+
+// ignore: must_be_immutable
+class ColoredBox extends StatelessWidget {
+  String label = "";
+  Color color = Colors.red;
+  int flex = 1;
+
+  ColoredBox(String label, Color color, int flex) {
+    this.label = label;
+    this.color = color;
+    this.flex = flex;
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: this.flex,
+      child: Container(
+        child: Text(this.label),
+        padding: EdgeInsets.all(30.0),
+        color: this.color,
       ),
     );
   }
