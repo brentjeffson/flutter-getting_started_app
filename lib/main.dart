@@ -21,6 +21,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
+      body: Image.asset("assets/space-1.jpg"),
     );
   }
 }
